@@ -1,0 +1,42 @@
+{
+  "name": "assignment-submission-cli-feb",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "This is a CLI to be used by students to do assignment submission",
+  "main": "index.js",
+  "repository": "git@github.com:AmaliTech-Training-Academy/assignment-submission-cli-feb.git",
+  "author": "(amt-kwaku-duah <kwaku.duah@amalitech.org>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "lint": "npx eslint src",
+    "lint:fix": "yarn lint --fix",
+    "prettier": "npx prettier --check src",
+    "format": "npx prettier --write src",
+    "subsys": "yarn build && ts-node src/controls/index.ts"
+  },
+  "bin": {
+    "subsys": "./dist/controls/index.js"
+  },
+  "private": false,
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/glob": "^8.1.0",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.11.24",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "axios": "^1.6.7",
+    "commander": "^12.0.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "form-data": "^4.0.0",
+    "glob": "^10.3.10",
+    "inquirer": "^9.2.15",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
